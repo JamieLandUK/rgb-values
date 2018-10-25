@@ -85,8 +85,8 @@ namespace rgb_values
             }
 
             Console.WriteLine(RGBCalculator(r_value, g_value, b_value));
-
-            Console.ReadKey();
+            Console.WriteLine();
+            goto start;
         }
     }
 }
