@@ -45,13 +45,16 @@ namespace rgb_values
 
         static void Main(string[] args)
         {
+        /* Using goto labels because I don't need to worry about changing args
+         * And it is more concise to call to a label
+         */
         start:
             Console.Write("Please write your RGB Hex value to translate: #");
             string rgbvalue = Console.ReadLine();
             string r_value;
             string g_value;
             string b_value;
-            char[] hexadecimal_values = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+            char[] hexadecimal_values = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
 
             foreach (var number in rgbvalue)
             {
