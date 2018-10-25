@@ -51,9 +51,20 @@ namespace rgb_values
             string r_value;
             string g_value;
             string b_value;
+            char[] hexadecimal_values = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
 
-            // Make sure that it is actually the length of an RGB colour code
-            if (rgbvalue.Length > 6 || rgbvalue.Length < 6)
+            foreach (var number in rgbvalue)
+            {
+                if (!hexadecimal_values.Contains(number))
+                {
+                    Console.WriteLine("That is not a correct hexadecimal value.");
+                    Console.WriteLine();
+                    goto start;
+                }
+            }
+
+                // Make sure that it is actually the length of an RGB colour code
+                if (rgbvalue.Length > 6 || rgbvalue.Length < 6)
             {
                 // Restart the code as an error catch.
                 Console.WriteLine("Please write 6 characters.");
