@@ -66,8 +66,8 @@ namespace rgb_values
                 }
             }
 
-                // Make sure that it is actually the length of an RGB colour code
-                if (rgbvalue.Length > 6 || rgbvalue.Length < 6)
+            // Make sure that it is actually the length of an RGB colour code
+            if (rgbvalue.Length > 6 || rgbvalue.Length < 6)
             {
                 // Restart the code as an error catch.
                 Console.WriteLine("Please write 6 characters.");
