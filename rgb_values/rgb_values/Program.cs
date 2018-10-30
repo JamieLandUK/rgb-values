@@ -15,9 +15,8 @@ namespace rgb_values
             int b_dec;
             // mc = Monochrome
             string mc_colour;
-            double mc_threshold = 0.5;
-            //Console.Write("Please enter a Threshold for the monochrome colour decision.")
-            //double mc_threshold = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Please enter a threshold for the monochrome colour decision. (0 to 1) ");
+            double mc_threshold = Convert.ToDouble(Console.ReadLine());
 
             // Converted by int32's hex function.
             r_dec = Convert.ToInt32(r, 16);
